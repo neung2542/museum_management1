@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include museum_management *.css
+recursive-include museum_management *.csv
+recursive-include museum_management *.html
+recursive-include museum_management *.ico
+recursive-include museum_management *.js
+recursive-include museum_management *.json
+recursive-include museum_management *.md
+recursive-include museum_management *.png
+recursive-include museum_management *.py
+recursive-include museum_management *.svg
+recursive-include museum_management *.txt
+recursive-exclude museum_management *.pyc
