@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:product_type",
+ "creation": "2021-09-21 23:01:51.871327",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_type",
+  "category",
+  "main_category",
+  "sub_category"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Data",
+   "label": "Product_type",
+   "unique": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Gadget Subcategory"
+  },
+  {
+   "fetch_from": "category.main_category",
+   "fetch_if_empty": 1,
+   "fieldname": "main_category",
+   "fieldtype": "Data",
+   "label": "Main_category"
+  },
+  {
+   "fetch_from": "category.sub_category",
+   "fieldname": "sub_category",
+   "fieldtype": "Data",
+   "label": "Sub_category"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-21 23:22:11.469714",
+ "modified_by": "Administrator",
+ "module": "Gadget",
+ "name": "Gadget Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "OPINION.#####",
+ "creation": "2021-09-21 22:19:05.532118",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "opinion",
+  "source",
+  "reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "opinion",
+   "fieldtype": "Data",
+   "label": "opinion"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "source"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "reference"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-21 22:53:35.884546",
+ "modified_by": "Administrator",
+ "module": "Gadget",
+ "name": "Gadget Product Opinion",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

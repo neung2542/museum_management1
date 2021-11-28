@@ -1,0 +1,26 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+<div class="container">
+    
+      <div class="col">
+        {{ product_name }}
+      </div>
+      <div class="col">
+        <img src="{{ upload_product_image }}" alt="{{ title }}">
+      </div>
+      <div class="col">
+        {{ product_type }}
+      </div>
+      <div class="col">
+        {{ product_category }}
+      </div>
+      <div class="col">
+        {{ year_launched }}
+      </div>
+      
+  </div>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

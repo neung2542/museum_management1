@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CollectionMedia.#####",
+ "creation": "2021-09-21 23:50:08.990613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attached_file",
+  "title",
+  "description",
+  "reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "attached_file",
+   "fieldtype": "Data",
+   "label": "Attached_file"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "title"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-21 23:51:05.882826",
+ "modified_by": "Administrator",
+ "module": "Gadget",
+ "name": "Gadget Collection Media",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

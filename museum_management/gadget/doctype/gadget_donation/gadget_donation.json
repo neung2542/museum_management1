@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Donation.#####",
+ "creation": "2021-09-21 23:03:12.601614",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "donation_id",
+  "dornor_name",
+  "donor_date",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "donation_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Donation_id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dornor_name",
+   "fieldtype": "Data",
+   "label": "Dornor_name"
+  },
+  {
+   "fieldname": "donor_date",
+   "fieldtype": "Data",
+   "label": "Donor_date"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-21 23:55:57.081312",
+ "modified_by": "Administrator",
+ "module": "Gadget",
+ "name": "Gadget Donation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

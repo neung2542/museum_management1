@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:HEI-GCO-####",
+ "creation": "2021-09-21 21:16:26.487142",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_id",
+  "product_name",
+  "model",
+  "product_type",
+  "product_category",
+  "product_subcategory",
+  "company",
+  "month_launched",
+  "year_launched",
+  "launch_detail",
+  "launch_product_description",
+  "opinion",
+  "upload_image",
+  "image",
+  "media",
+  "reference",
+  "date_submitted",
+  "revision"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Link",
+   "label": "Product Type",
+   "options": "Gadget Type"
+  },
+  {
+   "fetch_from": "product_type.product_type",
+   "fieldname": "product_category",
+   "fieldtype": "Data",
+   "label": "Product Category"
+  },
+  {
+   "fetch_from": "product_type.product_type",
+   "fieldname": "product_subcategory",
+   "fieldtype": "Data",
+   "label": "Product Subcategory"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Gadget Company"
+  },
+  {
+   "fieldname": "month_launched",
+   "fieldtype": "Datetime",
+   "label": "Month Launched"
+  },
+  {
+   "fieldname": "year_launched",
+   "fieldtype": "Datetime",
+   "label": "Year Launched"
+  },
+  {
+   "fieldname": "launch_detail",
+   "fieldtype": "Data",
+   "label": "Launch Detail"
+  },
+  {
+   "fieldname": "launch_product_description",
+   "fieldtype": "Data",
+   "label": "Launch Product Description"
+  },
+  {
+   "fieldname": "opinion",
+   "fieldtype": "Table",
+   "label": "Opinion",
+   "options": "Gadget Product Opinion"
+  },
+  {
+   "fieldname": "upload_image",
+   "fieldtype": "Data",
+   "label": "Upload Product Image"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "media",
+   "fieldtype": "Table",
+   "label": "Media",
+   "options": "Gadget Product Media"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Table",
+   "label": "Reference",
+   "options": "Gadget Product Reference"
+  },
+  {
+   "fieldname": "date_submitted",
+   "fieldtype": "Date",
+   "label": "Date Submitted"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Table",
+   "label": "Revision",
+   "options": "Gadget Product Revision"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-21 23:33:48.610831",
+ "modified_by": "Administrator",
+ "module": "Gadget",
+ "name": "Gadget Product",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

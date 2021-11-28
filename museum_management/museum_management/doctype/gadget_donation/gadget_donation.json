@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:Donor-.#####",
+ "creation": "2021-10-19 21:51:30.582617",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "donation_id",
+  "dornor_name",
+  "donor_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "donation_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "dornor_name",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "donor_date",
+   "fieldtype": "Data"
+  }
+ ],
+ "hide_toolbar": 1,
+ "links": [],
+ "max_attachments": 3,
+ "modified": "2021-11-27 21:37:55.332799",
+ "modified_by": "Administrator",
+ "module": "Museum Management",
+ "name": "Gadget Donation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

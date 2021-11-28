@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:HEI-GCO-####",
+ "creation": "2021-09-21 23:02:59.145617",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "collection_id",
+  "product_id",
+  "product_name",
+  "model",
+  "product_type",
+  "product_category",
+  "product_subcategory",
+  "company",
+  "year_purchased",
+  "date_registered",
+  "functional_condition",
+  "general_condition",
+  "condition_remark",
+  "image",
+  "media",
+  "source",
+  "donor_id",
+  "date_submitted",
+  "revision"
+ ],
+ "fields": [
+  {
+   "fieldname": "collection_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Collection ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Link",
+   "label": "Product ID",
+   "options": "Gadget Product"
+  },
+  {
+   "fetch_from": "product_id.product_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fetch_from": "product_id.model",
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fetch_from": "product_id.product_type",
+   "fieldname": "product_type",
+   "fieldtype": "Data",
+   "label": "Product Type"
+  },
+  {
+   "fetch_from": "product_id.product_category",
+   "fieldname": "product_category",
+   "fieldtype": "Data",
+   "label": "Product Category"
+  },
+  {
+   "fetch_from": "product_id.product_subcategory",
+   "fieldname": "product_subcategory",
+   "fieldtype": "Data",
+   "label": "Product Subcategory"
+  },
+  {
+   "fetch_from": "product_id.company",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "year_purchased",
+   "fieldtype": "Data",
+   "label": "Year purchased"
+  },
+  {
+   "fieldname": "date_registered",
+   "fieldtype": "Data",
+   "label": "Date Registered"
+  },
+  {
+   "fieldname": "functional_condition",
+   "fieldtype": "Data",
+   "label": "Functional Condition"
+  },
+  {
+   "fieldname": "general_condition",
+   "fieldtype": "Data",
+   "label": "General Condition"
+  },
+  {
+   "fieldname": "condition_remark",
+   "fieldtype": "Data",
+   "label": "Condition Remark"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Data",
+   "label": "Image"
+  },
+  {
+   "fieldname": "media",
+   "fieldtype": "Data",
+   "label": "Media"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "donor_id",
+   "fieldtype": "Data",
+   "label": "Donor ID"
+  },
+  {
+   "fieldname": "date_submitted",
+   "fieldtype": "Data",
+   "label": "Date Submitted"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Data",
+   "label": "Revision"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-21 23:44:39.640661",
+ "modified_by": "Administrator",
+ "module": "Gadget",
+ "name": "Gadget Collection",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
